@@ -1,0 +1,104 @@
+/* // <weight>: Use a value from 100 to 900 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+.inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* / <weight>: Use a value from 100 to 900 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* ============================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* common paragraph style starts ===*/
+#header header nav ul li a {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* common paragraph style ends ===*/
+
+#header {
+    /* background-color: #1a012d; */
+    background-color: #22013b;
+}
+
+#header header .logo h2 {
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#header header .logo h2 span {
+    background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header header {
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#header header div {}
+
+#header header nav {}
+
+#header header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+
+#header header nav ul li {}
+
+#header header nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#header header .header-button button {
+    background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+#header header .header-button button:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #8e2de2, #ff4e50, #f9d423);
+    transition: 0.3s ease;
+}
+
+#header header .header-button button .icon {
+    font-size: 24px;
+}
