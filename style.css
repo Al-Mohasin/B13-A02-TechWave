@@ -34,7 +34,6 @@
 /* common paragraph style ends ===*/
 
 #header {
-    /* background-color: #1a012d; */
     background-color: #22013b;
 }
 
@@ -58,6 +57,7 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    border: 1px solid yellow;
 }
 
 #header header div {}
@@ -93,7 +93,6 @@
 }
 
 #header header .header-button button:hover {
-    /* transform: scale(1.05); */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     background: linear-gradient(90deg, #8e2de2, #ff4e50, #f9d423);
     transition: 0.3s ease;
@@ -101,4 +100,178 @@
 
 #header header .header-button button .icon {
     font-size: 24px;
+}
+
+.menubar-icon {
+    display: none;
+}
+
+#header .banner {
+    background-image: url("assets/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .banner-container {
+    border: 1px solid yellow;
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+#header .banner-container .mic-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .banner-container .mic-image-section .mic-image {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#header .banner .banner-container .mic-image-section .mic-image .big-image-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .banner-container .mic-image-section .big-image {
+    width: 100%;
+}
+
+#header .banner-container .mic-image-section .small-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header .banner-container .mic-image-section .mic-image .tooltip {
+    background-color: #01ff87;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#header .banner-container .banner-text {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#header .banner-container .banner-text h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+#header .banner-container .banner-text p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#header .banner-container .banner-text .btn-1 {
+    background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+    color: #ffffff;
+    border: 0px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+    margin-right: 5px;
+}
+
+#header .banner-container .banner-text .btn-1:hover {
+    color: #01ff87;
+    border: 1px solid #01ff87;
+    background: transparent;
+}
+
+#header .banner-container .banner-text .btn-2 {
+    color: #01ff87;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #01ff87;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease-out;
+    background-color: transparent;
+}
+
+#header .banner-container .banner-text .btn-2:hover {
+    background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+    color: #ffffff;
+    border: none;
+}
+
+#header .banner-container .banner-text {}
+
+/*==============================================*/
+/* Responsive css starts */
+/*===========================*/
+
+/* normal device  */
+@media screen and (max-width:576px) {
+    #header header .logo h2 {
+        margin-left: 20px;
+    }
+
+    #header header .header-button button {
+        display: none;
+    }
+
+    #header header .nav-container {
+        display: none;
+    }
+
+    .menubar-icon {
+        display: block;
+    }
+
+    .menubar-icon i {
+        color: #fff;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    #header .banner-container .mic-image-section .big-image {
+        max-width: 300px;
+    }
+
+    #header .banner-container .mic-image-section .big-image {
+        width: 80%;
+    }
+
+    #header .banner-container .mic-image-section .small-image {
+        width: 35%;
+    }
+
 }
