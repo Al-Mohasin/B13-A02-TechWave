@@ -33,6 +33,7 @@
 
 /* common paragraph style ends ===*/
 
+/* header starts ==================== */
 #header {
     background-color: #22013b;
 }
@@ -60,7 +61,6 @@
     border: 1px solid yellow;
 }
 
-#header header div {}
 
 #header header nav {}
 
@@ -110,7 +110,8 @@
     background-image: url("assets/hero-bg.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: cover;
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -120,7 +121,7 @@
 }
 
 #header .banner-container {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     max-width: 530px;
     margin: 0 auto;
 }
@@ -232,7 +233,81 @@
     border: none;
 }
 
-#header .banner-container .banner-text {}
+/* header starts ==================== */
+
+
+/* about starts ==================== */
+#about {
+    background-color: #22013b;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+#about .about-container {
+    max-width: 1600px;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+}
+
+#about .about-container .about-text {
+    text-align: center;
+    /* border: 1px solid yellow; */
+}
+
+#about .about-container .about-text h2 {
+    color: #fff;
+    font-size: 32px;
+}
+
+#about .about-container .about-text {}
+
+#about .about-container .about-text .about-p-top {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#about .about-container .about-text .about-p-bottom {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#about .about-container .review {
+    border-top: 1px solid rgb(93, 92, 92);
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: space-between;
+}
+
+#about .about-container .review .count {
+    /* border: 1px dashed gray; */
+    text-align: center;
+    padding-top: 80px;
+}
+
+#about .about-container .review .count h3 {
+    color: #01ff87;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#about .about-container .review .count p {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+/* about ends ====================== */
+
 
 /*==============================================*/
 /* Responsive css starts */
@@ -262,6 +337,10 @@
         margin-right: 20px;
     }
 
+    #header .banner {
+        background-size: contain;
+    }
+
     #header .banner-container .mic-image-section .big-image {
         max-width: 300px;
     }
@@ -272,6 +351,10 @@
 
     #header .banner-container .mic-image-section .small-image {
         width: 35%;
+    }
+
+    #about .about-container .review {
+        grid-template-columns: repeat(2, 250px);
     }
 
 }
